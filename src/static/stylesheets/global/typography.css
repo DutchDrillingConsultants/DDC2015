@@ -1,0 +1,9 @@
+:root {
+	--main-color: red;
+	--secondairy-color:blue;
+}
+
+body {
+	font-size:62.5%;
+	color: var(--main-color);
+}
