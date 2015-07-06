@@ -1,7 +1,7 @@
 'use strict';
 
 project.component.Navigation = function(element){
-	console.log(element);
+
 	var frag = document.createDocumentFragment();
 	var ol = document.createElement('ol');
 	frag.appendChild(ol);

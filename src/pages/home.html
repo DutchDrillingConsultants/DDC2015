@@ -5,10 +5,18 @@
     <!--#include virtual="../_includes/document/head.html" -->
 </head>
 <body onload="log()">
-<header class="header">
-	<!--#include virtual="../_includes/navigation/nav.html" -->
-<header>
-<!--#include virtual="../_includes/document/foot.html" -->
+<div class="site-wrapper" data-constructor="OffCanvas"> 
+	<div class="canvas-wrapper"> 
+		<a href="#" class="toggle-nav">Toggle Nav</a>
+		<div class="site-menu">
+			
+			<header class="header">
+				<!--#include virtual="../_includes/navigation/nav.html" -->
+			</header>
+		<!--#include virtual="../_includes/document/foot.html" -->
+		</div>
+	</div>
+</div>
 <script>
 function log() {
 var t = window.performance.timing,
@@ -22,5 +30,6 @@ var t = window.performance.timing,
 	}
 
 </script>
+
 </body>
 </html>
