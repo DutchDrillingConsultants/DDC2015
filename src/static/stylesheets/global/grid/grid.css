@@ -21,7 +21,7 @@
 }
 
 [class*='col-'] {
-  padding-right: 20px;
+  padding-right: 2em;
 }
 
 [class*='col-']:last-of-type {
@@ -29,9 +29,9 @@
 }
 
 .grid-pad {
-  padding: 20px 0 20px 20px;
+  padding: 2em 0 2em 2em;
 }
 
 .grid-pad > [class*='col-']:last-of-type {
-  padding-right: 20px;
+  padding-right: 2em;
 }

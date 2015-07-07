@@ -136,6 +136,10 @@ gulp.task('watch', function() {
         gulp.start('fonts');
     });
 
+    gulp.watch([env.src + '/static/stylesheets/**/*.css'], function() {
+        gulp.start('styles');
+    });
+
 });
 
 

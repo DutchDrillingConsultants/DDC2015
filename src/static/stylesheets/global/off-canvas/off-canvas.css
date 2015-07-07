@@ -15,7 +15,7 @@
 	transition: .3s ease all;
 	 -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-	padding: 5% 0;
+	padding: .5em 0;
 }
 
 .site-menu {
@@ -25,7 +25,7 @@
 	top: 0;
 	left: -300px;
 	background: #428bca;
-	padding: 15px;
+	padding: 1.5em;
 }
 
 .site-wrapper.show-nav .canvas-wrapper {

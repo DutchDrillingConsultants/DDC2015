@@ -2,13 +2,5 @@
 
 project.component.Navigation = function(element){
 
-	var frag = document.createDocumentFragment();
-	var ol = document.createElement('ol');
-	frag.appendChild(ol);
-	for (var i=0; i<5; i++){
-		var li = document.createElement('li');
-		li.textContent = i;
-		frag.appendChild(li);
-	}
-	element.appendChild(frag);
+	console.log(element);
 };
