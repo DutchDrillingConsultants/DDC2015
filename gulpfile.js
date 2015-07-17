@@ -54,6 +54,11 @@ gulp.task('hint', function() {
 
 });
 
+gulp.task('fonts', function() {
+    return gulp.src([env.src + '/static/fonts/*'])
+        .pipe(gulp.dest([env.build + '/static/fonts']));
+});
+
 gulp.task('scripts', ['scripts-vendor', 'scripts-shims'], function() {
 
     return gulp.src([env.src + '/static/javascripts/shim/domready.js', env.src + '/static/javascripts/shim/Array.js', env.src + '/static/javascripts/shim/Object.js', env.src + '/static/javascripts/shim/ClassList.js', env.src + '/static/javascripts/shim/MatchMedia.js', env.src + '/static/javascripts/shim/AddEventListener.js', env.src + '/static/javascripts/shim/Bind.js', env.src + '/static/javascripts/shim/String.js', env.src + '/static/javascripts/utils/*.js', env.src + '/static/javascripts/app/helpers/**/*.js', env.src + '/static/javascripts/app/core/core.js', env.src + '/static/javascripts/app/ui/**/*.js', env.src + '/static/javascripts/app/core/initialize.js'])
@@ -101,7 +106,7 @@ gulp.task('fonts', function() {
 
     return gulp.src(env.src + '/static/fonts/*')
         .pipe(gulp.dest(env.build + '/static/fonts/'));
-
+        
 });
 
 gulp.task('clean', function() {

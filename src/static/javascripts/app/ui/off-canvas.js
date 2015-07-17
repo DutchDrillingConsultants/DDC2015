@@ -1,6 +1,6 @@
 'use strict';
 
-project.component.OffCanvas = function(element) { 
+ddc.component.OffCanvas = function(element) { 
 	var toggleEl = document.querySelector('.toggle-nav'),
 	toggleNav = function toggleNav() {
 		if (element) {

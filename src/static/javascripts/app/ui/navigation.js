@@ -1,6 +1,6 @@
 'use strict';
 
-project.component.Navigation = function(element){
+ddc.component.Navigation = function(element){
 
 	console.log(element);
 };
