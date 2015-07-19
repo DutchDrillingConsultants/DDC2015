@@ -1,0 +1,50 @@
+.site-wrapper {
+	height: auto;
+}
+
+.canvas-wrapper {
+	position: static;
+ 	-webkit-transform: none;
+  transform: none;
+	-webkit-transition: none;
+	transition: none;
+	height: auto;
+	padding: 0;
+}
+
+.site-menu {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: 1.5em;
+	z-index: 99;
+}
+
+.site-wrapper.show-nav .canvas-wrapper {
+	-webkit-transform: none;  
+  transform: none;  
+}
+
+.toggle-nav {
+	display: none;
+}
+
+.main-navigation > ul > li {
+	display: inline-block;
+	color: var(--main-color);
+	position: relative;
+	z-index: 999;
+}
+
+.main-navigation > ul > li > ul {
+	display: none;
+}
+
+.main-navigation li.show-sub > ul, 
+.main-navigation > ul > li:hover > ul {
+	display: block;
+	position: absolute;
+	z-index: 9999;
+	background-color: var(--main-color);
+}

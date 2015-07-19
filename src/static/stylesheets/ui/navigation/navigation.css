@@ -1,0 +1,19 @@
+.main-navigation > ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.main-navigation > ul {
+	background-color: var(--secondairy-color);
+}
+
+.main-navigation > ul > li {
+	padding: .5em;
+}
+
+.main-navigation > ul > li > ul {
+	margin: 0;
+	padding: 0 .5em;
+	list-style-type: none;
+}
