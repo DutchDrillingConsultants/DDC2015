@@ -17,8 +17,8 @@ ddc.component.Navigation = function(element){
 					e.target.click();
 				});
 
-				navEls[index].addEventListener('click', function(e) {
-					var el = document.querySelector('.show-sub');
+				navEls[index].addEventListener('click', function() {		
+					var el = document.querySelector('.show-sub');			
 						if(el) {							
 							el.classList.remove('show-sub');	
 							this.classList.add('show-sub');						
@@ -29,5 +29,15 @@ ddc.component.Navigation = function(element){
 					});
 			})(i);
 		}
+
+		document.addEventListener('click', function(e) {
+			var el;
+			if (e.target.className !== "main-navigation__first show-sub") {
+					el = document.querySelector('.show-sub');
+						if (el) {
+							el.classList.remove('show-sub');
+						}
+			}
+		});
 	}
 };
