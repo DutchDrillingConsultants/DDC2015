@@ -30,6 +30,16 @@
 	display: none;
 }
 
+.header {
+	width: var(--layout-width);
+	margin: 0 auto;
+}
+
+.main-navigation {
+	display: table-cell;
+	vertical-align: bottom;
+}
+
 .main-navigation > ul > li {
 	display: inline-block;
 	color: var(--main-color);
@@ -47,4 +57,13 @@
 	position: absolute;
 	z-index: 9999;
 	background-color: var(--main-color);
+}
+
+.site-logo {
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.site-logo img {
+	display: block;
 }

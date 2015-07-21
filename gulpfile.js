@@ -11,6 +11,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     runSequence = require('run-sequence'),
     browserSync = require('browser-sync'),
+    imagemin = require('gulp-imagemin');
+    pngquant = require('imagemin-pngquant');
     ssi = require('ssi');
 
 var env = {
@@ -86,11 +88,11 @@ gulp.task('scripts-shims', function() {
 
 });
 
-gulp.task('images', ['static-images'], function() {
+gulp.task('images', function() {
 
-    return gulp.src(env.src + '/media/images/**/*')
-        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-        .pipe(gulp.dest(env.build + '/media/images/'));
+    return gulp.src(env.src + '/static/images/*')
+        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true, use: [pngquant()] }))
+        .pipe(gulp.dest(env.build + '/static/images'));
 
 });
 
