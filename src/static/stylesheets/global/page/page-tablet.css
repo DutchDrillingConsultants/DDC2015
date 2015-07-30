@@ -1,0 +1,5 @@
+.home .row {
+	width: var(--layout-width);
+	margin: 0 auto;
+	min-height: 600px;
+}

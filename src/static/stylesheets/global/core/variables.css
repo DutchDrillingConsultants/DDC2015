@@ -1,7 +1,7 @@
 :root {
-	--main-color: #004276;
-	--secondairy-color: #fff;
-	--tertiary-color: #ff851b;
+	--main-color: rgb(47,70,150);
+	--secondairy-color: rgb(255,255,255);
+	--tertiary-color: rgb(255,133,27);
 
 	--layout-width: 61.25em;
 }

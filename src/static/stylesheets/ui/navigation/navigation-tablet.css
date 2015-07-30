@@ -61,9 +61,9 @@
 
 .site-logo {
 	display: table-cell;
-	vertical-align: bottom;
 }
 
 .site-logo img {
 	display: block;
+	max-width: 100%;
 }

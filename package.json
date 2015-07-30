@@ -6,6 +6,7 @@
   "private": true,
   "devDependencies": {
     "browser-sync": "^1.7.2",
+    "concurrent-transform": "^1.0.0",
     "del": "^1.1.0",
     "glob": "^4.2.2",
     "gulp": "^3.8.10",
@@ -13,6 +14,7 @@
     "gulp-concat": "^2.3.4",
     "gulp-csso": "^0.2.9",
     "gulp-ignore": "^1.0.1",
+    "gulp-image-resize": "^0.6.0",
     "gulp-imagemin": "^2.3.0",
     "gulp-jshint": "^1.9.0",
     "gulp-myth": "^1.0.2",

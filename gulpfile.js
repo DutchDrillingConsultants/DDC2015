@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp'),
     csso = require('gulp-csso'),
 	myth = require('gulp-myth'),
@@ -11,9 +13,12 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     runSequence = require('run-sequence'),
     browserSync = require('browser-sync'),
-    imagemin = require('gulp-imagemin');
-    pngquant = require('imagemin-pngquant');
-    ssi = require('ssi');
+    imagemin = require('gulp-imagemin'),
+    pngquant = require('imagemin-pngquant'),
+    ssi = require('ssi'),
+    parallel = require("concurrent-transform"),
+    imageResize = require('gulp-image-resize'),
+    os = require("os");
 
 var env = {
     src: 'src',
@@ -90,18 +95,31 @@ gulp.task('scripts-shims', function() {
 
 gulp.task('images', function() {
 
-    return gulp.src(env.src + '/static/images/*')
+    return gulp.src(env.src + '/static/images/**/*')
         .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true, use: [pngquant()] }))
         .pipe(gulp.dest(env.build + '/static/images'));
 
 });
 
-gulp.task('static-images', function() {
-
-    return gulp.src(env.src + '/static/images/**/*')
-        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-        .pipe(gulp.dest(env.build + '/static/images/'));
-
+gulp.task('parallel', function () {
+  
+    return gulp.src(env.src + '/static/images/site-assets/*.{jpg,png}')
+           .pipe(imageResize({ 
+              width : 100,
+              height : 100,
+              crop : true,
+              upscale : false,
+              imageMagick: true
+        }))
+        .pipe(imageResize({ 
+              width : 100,
+              height : 100,
+              crop : true,
+              upscale : false,
+              imageMagick: true
+        }))
+        .pipe(rename(function (path) { path.basename += "-thumbnail"; }))
+        .pipe(gulp.dest(env.build + '/static/images/site-assets'));
 });
 
 gulp.task('fonts', function() {
