@@ -1,4 +1,10 @@
-.main {
+.home .grid:first-of-type {
 	background: url('../../../../static/images/site-assets/background-home1.jpg') no-repeat;
 	background-size: cover;
+	position: relative;
+	z-index: 80;
+}
+
+.grid:nth-of-type(2) {
+	background-color: var(--main-color);
 }

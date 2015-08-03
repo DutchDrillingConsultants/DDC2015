@@ -1,5 +1,21 @@
-.home .row {
+.home .grid:first-of-type {
+	height: 400px;
+}
+
+.container {
 	width: var(--layout-width);
 	margin: 0 auto;
-	min-height: 600px;
+	min-height: 5em;
+	position: relative;
 }
+
+.container .negative {
+	position: absolute;
+	top: -6em;
+	left: 0;
+	bottom: 2em;
+	width: 100%;
+	z-index: 99;
+	background-color: var(--secondairy-color);
+}
+
