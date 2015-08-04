@@ -31,7 +31,7 @@
 }
 
 .header {
-	width: var(--layout-width);
+	width: var(--layout-width_desktop);
 	margin: 0 auto;
 }
 

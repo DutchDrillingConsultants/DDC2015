@@ -1,21 +1,45 @@
 .home .grid:first-of-type {
-	height: 400px;
+	height: 500px;
 }
 
 .container {
-	width: var(--layout-width);
-	margin: 0 auto;
-	min-height: 5em;
+	width: var(--layout-width_tablet);
+	margin: 0 auto;	
 	position: relative;
+	height: 100%;
+}
+
+.grid:nth-of-type(2) .container {
+	min-height: 14em;
 }
 
 .container .negative {
 	position: absolute;
-	top: -6em;
 	left: 0;
 	bottom: 2em;
 	width: 100%;
 	z-index: 99;
+}
+
+.project-section {
 	background-color: var(--secondairy-color);
 }
 
+.container > h1 {
+	width: 10em;
+	height: 60%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.container > h1 span:not(:first-of-type) {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	bottom: 60%;
+}
+
+.negative .col-1-2 {
+	
+}

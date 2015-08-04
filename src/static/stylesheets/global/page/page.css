@@ -8,3 +8,17 @@
 .grid:nth-of-type(2) {
 	background-color: var(--main-color);
 }
+
+.project-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.project-section {
+	padding: 1em;
+}
+
+.project-section figure {
+	margin: 0;
+}

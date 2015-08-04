@@ -2,6 +2,8 @@
 	--main-color: rgb(47,70,150);
 	--secondairy-color: rgb(255,255,255);
 	--tertiary-color: rgb(255,133,27);
+	--border-color: rgb(224, 224, 224);
 
-	--layout-width: 61.25em;
+	--layout-width_desktop: 60em;
+	--layout-width_tablet: 40em;
 }
