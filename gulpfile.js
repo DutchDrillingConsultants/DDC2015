@@ -95,7 +95,7 @@ gulp.task('scripts-shims', function() {
 
 gulp.task('images', function() {
 
-    return gulp.src(env.src + '/static/images/**/*')
+    return gulp.src(env.src + '/static/images/**/*.*')
         .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true, use: [pngquant()] }))
         .pipe(gulp.dest(env.build + '/static/images'));
 
@@ -118,7 +118,7 @@ gulp.task('parallel', function () {
               upscale : false,
               imageMagick: true
         }))
-        .pipe(rename(function (path) { path.basename += "-thumbnail"; }))
+        .pipe(rename(function (path) { path.basename += '-thumbnail'; }))
         .pipe(gulp.dest(env.build + '/static/images/site-assets'));
 });
 

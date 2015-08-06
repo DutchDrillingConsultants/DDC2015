@@ -5,20 +5,20 @@
 	z-index: 80;
 }
 
-.grid:nth-of-type(2) {
-	background-color: var(--main-color);
-}
-
-.project-list {
+.main-list {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.project-section {
-	padding: 1em;
+.grid:nth-of-type(3) {
+	background-color: var(--background-sup);
 }
 
-.project-section figure {
+.main-section {
+	padding: 1em 1.5em;
+}
+
+.main-section figure {
 	margin: 0;
 }

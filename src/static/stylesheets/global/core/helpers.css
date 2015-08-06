@@ -7,3 +7,7 @@
 .cf:after {
     clear: both;
 }
+
+.center {
+	text-align: center;
+}

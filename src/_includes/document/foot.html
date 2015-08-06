@@ -23,7 +23,7 @@ window.ddc = window.ddc || new Object('ddc');
 
 ddc.observer = new FontFaceObserver('oswaldregular',{weight:400});
 ddc.observer
-	.check()
+	.check(null, 5000)
 	.then(function(){
 			if (!document.documentElement.classList.contains('font-loaded')) {
 				document.documentElement.className += 'font-loaded';
