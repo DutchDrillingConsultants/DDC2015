@@ -18,12 +18,6 @@
 	list-style-type: none;
 }
 
-.site-logo {
-  display: table-cell;
-  width: 50%;
-  min-width: 100px;
-}
-
 .site-logo img {
 	width: auto;
 	display: inline-block;
@@ -32,7 +26,7 @@
 
 .site-logo a {
 	display: inline-block;
-	width: 100%;
+	width: auto;
 }
 
 .site-logo span {

@@ -60,7 +60,9 @@
 }
 
 .site-logo {
-	display: table-cell;
+  display: table-cell;
+  width: 50%;
+  min-width: 100px;
 }
 
 .site-logo img {

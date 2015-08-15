@@ -11,6 +11,10 @@
 	padding: 0;
 }
 
+.main-list > li:not(:first-child) {
+	border-top: 1px solid var(--secondairy-color);
+}
+
 .grid:nth-of-type(3) {
 	background-color: var(--background-sup);
 }

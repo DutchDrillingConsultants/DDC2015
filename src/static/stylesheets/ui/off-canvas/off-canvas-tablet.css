@@ -8,7 +8,7 @@
   transform: none;
 	-webkit-transition: none;
 	transition: none;
-	height: auto;
+	height: 100%;
 	padding: 0;
 }
 
@@ -16,7 +16,8 @@
 	width: 100%;
 	position: static;
 	top: 0;
-	left: 0;
+	-webkit-transform: translateZ(0) translateX(0);  
+  transform: translateZ(0) translateX(0); 
 	padding: 1.5em;
 	background: var(--secondairy-color);
 }

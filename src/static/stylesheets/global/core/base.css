@@ -11,6 +11,12 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
+body {
+	/* ipad touch fix */
+	cursor: pointer;
+	-webkit-overflow-scrolling: touch
+}
+
 a > img {
 	border: none;
 }

@@ -86,3 +86,7 @@ p, li {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
+
+.main-section > h3 {
+    margin-top: 0;
+}

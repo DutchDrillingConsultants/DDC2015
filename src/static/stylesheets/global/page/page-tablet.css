@@ -54,3 +54,7 @@
 .main-section > h3 {
 	margin-top: 0;
 }
+
+.main-list > li:not(:first-child) {
+	border-top: none;
+}

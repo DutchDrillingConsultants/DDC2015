@@ -6,7 +6,7 @@ ddc.component.Navigation = function(element){
 		length = navEls.length,
 		mql = window.matchMedia('screen and (min-width: 40em)');
 
-	if ('ontouchstart' in window && mql.matches) {
+	if ('ontouchstart' in document.documentElement && mql.matches) {
 		for (var i = 0; i < length; i++) {
 			(function (index) {
 				navEls[index].addEventListener('touchend', function(e) {
@@ -32,7 +32,7 @@ ddc.component.Navigation = function(element){
 
 		document.addEventListener('click', function(e) {
 			var el;
-			if (e.target.className !== "main-navigation__first show-sub") {
+			if (e.target.className !== 'main-navigation__first show-sub') {
 					el = document.querySelector('.show-sub');
 						if (el) {
 							el.classList.remove('show-sub');
