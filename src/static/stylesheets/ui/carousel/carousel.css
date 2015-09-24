@@ -1,23 +1,57 @@
 .carousel {
-
+	position: relative;
 }
 
-.slide-list {
-	position: relative;
+.carousel--slide-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.active .slide {
+.active .carousel--slide-list--slide {
   display: none;
-  position: relative;
+  position: absolute;
+  z-index: 500;
   top: 0;
   left: 0;
   border: none;
 }
 
-.slide.current {
+.carousel--slide-list--slide.current {
   display: block;
+}
 
+.carousel--btn-prev,
+.carousel--btn-next {
+  position: absolute;
+  z-index: 700;
+  top: 50%;
+  margin-top: -2.5em;
+  border:0;
+  background: rgba(255,255,255,.6);
+  line-height: 1;
+  padding:2em .5em;
+  transition: padding .4s ease-out;
+}
+
+.carousel--btn-next:hover, .carousel--btn-next:focus,
+.carousel--btn-prev:hover, .carousel--btn-prev:focus {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.carousel--btn-prev {
+  left:0;
+  border-radius: 0 .25em .25em 0;
+}
+
+.carousel--btn-next {
+  right:0;
+  border-radius: .25em 0 0 .25em;
+}
+
+.carousel--controls {
+	margin: 0;
+	padding: 0;
+	list-style-type:0;
 }
