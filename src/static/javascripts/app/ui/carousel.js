@@ -11,7 +11,6 @@ ddc.component.Carousel = function(element){
 	this.setSlides(this.index);
 };
 
-
 ddc.component.Carousel.prototype.addControls = function(element) {
 	var ctrls = document.createElement('UL');
 	ctrls.setAttribute('class', 'carousel--controls');

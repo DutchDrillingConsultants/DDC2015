@@ -1,3 +1,7 @@
+[class*='col-'] {
+  float: left;
+}
+
 .col-1-2 {
   width: 50%;
 }

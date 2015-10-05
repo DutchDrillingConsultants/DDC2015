@@ -1,5 +1,6 @@
 .carousel {
 	position: relative;
+	transform: translate3d(0,0,0);
 }
 
 .carousel--slide-list {
@@ -10,10 +11,8 @@
 
 .active .carousel--slide-list--slide {
   display: none;
-  position: absolute;
+  position: relative;
   z-index: 500;
-  top: 0;
-  left: 0;
   border: none;
 }
 
@@ -30,7 +29,7 @@
   border:0;
   background: rgba(255,255,255,.6);
   line-height: 1;
-  padding:2em .5em;
+  padding: 2em .5em;
   transition: padding .4s ease-out;
 }
 
@@ -53,5 +52,5 @@
 .carousel--controls {
 	margin: 0;
 	padding: 0;
-	list-style-type:0;
+	list-style-type: none;
 }

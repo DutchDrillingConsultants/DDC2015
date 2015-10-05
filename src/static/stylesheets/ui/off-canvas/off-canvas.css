@@ -37,6 +37,7 @@
 
 .main {
 	height: 100%;
+	margin-top: 3em;
 }
 
 .site-wrapper .canvas-wrapper::after {
