@@ -8,7 +8,17 @@ ddc.component.Navigation = function(element){
 
 	if ('ontouchstart' in document.documentElement && mql.matches) {
 		for (var i = 0; i < length; i++) {
+			
 			(function (index) {
+
+					navEls[index].addEventListener('keydown', function(e) {
+						var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+  					if (keyCode === 13) {
+					/* trigger the actual behavior we bound to the 'click' event */
+								e.target.click();
+  					}
+  				});
+
 				navEls[index].addEventListener('touchend', function(e) {
 					
 					/* prevent delay and simulated mouse events */

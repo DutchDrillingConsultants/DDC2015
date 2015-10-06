@@ -16,13 +16,11 @@ ddc.component.Carousel.prototype.addControls = function(element) {
 	ctrls.setAttribute('class', 'carousel--controls');
 
 	ctrls.innerHTML = '<li>' +
-    '<button type="button" class="carousel--btn-prev">' +
-      '<img src="img/chevron-left.png" alt="Previous Slide">' +
+    '<button type="button" class="carousel--btn-prev" aria-label="Previous">' +
     '</button>' +
   '</li>' +
   '<li>' +
-    '<button type="button" class="carousel--btn-next">' +
-      '<img src="img/chevron-right.png" alt="Next Slide">' +
+    '<button type="button" class="carousel--btn-next" aria-label="Next">' +
     '</button>' +
   '</li>';
 

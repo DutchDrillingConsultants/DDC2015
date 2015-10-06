@@ -31,7 +31,7 @@
 }
 
 .header {
-	width: 100%;
+	width: var(--layout-width_tablet);
 	margin: 0 auto;
 }
 
@@ -56,12 +56,19 @@
 	display: block;
 	position: absolute;
 	z-index: 9999;
-	background-color: var(--main-color);
+	border: 1px solid var(--background-sup-sup);
+	margin: 0 -1em;
+	padding: 0;
+}
+
+.main-navigation > ul > li > ul > li {
+	padding: 0em 1em;
+	border-bottom: 1px solid var(--background-sup-sup);
 }
 
 .site-logo {
   display: table-cell;
-  width: 50%;
+  width: 34%;
   min-width: 100px;
 }
 

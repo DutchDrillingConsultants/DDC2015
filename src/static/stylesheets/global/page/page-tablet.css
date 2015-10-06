@@ -5,38 +5,11 @@
 	height: 100%;
 }
 
-.grid:nth-of-type(2) .container {
-	min-height: 4em;
-}
-
-.grid:nth-of-type(3) {
-	margin-top: 2em;
-}
-
-.grid:nth-of-type(3) .container {
-	min-height: 11em;	
-}
-
 .main-section {
 	background-color: var(--secondairy-color);
 	border: 1px solid var(--border-color);
 	border-bottom-right-radius: 1em;
 	box-shadow: 3px 3px 11px var(--border-color);
-}
-
-.container > h1 {
-	width: 12em;
-	height: 60%;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-}
-
-.container > h1 span:not(:first-of-type) {
-	display: inline-block;
-	position: absolute;
-	right: 0;
-	bottom: 60%;
 }
 
 .main-section > h3 {

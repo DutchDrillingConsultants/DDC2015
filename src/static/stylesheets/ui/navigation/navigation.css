@@ -9,13 +9,17 @@
 }
 
 .main-navigation > ul > li {
-	padding: .5em;
+	padding: .5em 1em;
 }
 
 .main-navigation > ul > li > ul {
 	margin: 0;
-	padding: 0 .5em;
+	padding: 0 1em;
 	list-style-type: none;
+}
+
+.main-navigation a {
+	display: block;
 }
 
 .site-logo img {

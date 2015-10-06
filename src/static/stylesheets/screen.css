@@ -1,12 +1,9 @@
 @import url('global/normalize.css');
 @import url('global/core/variables.css');
 @import url('global/core/helpers.css');
-
 @import url('global/core/base.css');
 @import url('global/typography.css');
-
 @import url('global/page/page.css');
-
 @import url('global/grid/grid.css');
 @import url('ui/navigation/navigation.css');
 @import url('ui/off-canvas/off-canvas.css');

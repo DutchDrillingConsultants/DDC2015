@@ -1,6 +1,8 @@
 'use strict';
 
 var gulp = require('gulp'),
+    autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps = require('gulp-sourcemaps'),
     csso = require('gulp-csso'),
 	myth = require('gulp-myth'),
     jshint = require('gulp-jshint'),
@@ -47,6 +49,10 @@ gulp.task('styles', function() {
 
     return gulp.src([env.src + '/static/stylesheets/*.css'])
         .pipe(myth())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(csso())
         .pipe(gulp.dest(env.build + '/static/stylesheets/'))
         .pipe(notify({ message: 'Styles task complete' }));

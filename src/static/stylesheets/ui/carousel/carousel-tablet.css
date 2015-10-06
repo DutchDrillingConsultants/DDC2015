@@ -1,0 +1,14 @@
+.carousel--btn-prev,
+.carousel--btn-next {
+  padding: 1.5em 1em;
+}
+
+.carousel--btn-next:hover, .carousel--btn-next:focus,
+.carousel--btn-prev:hover, .carousel--btn-prev:focus {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.carousel h1 {
+	font-size: 1.7em;
+}

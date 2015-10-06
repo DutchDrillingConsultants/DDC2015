@@ -25,23 +25,32 @@
   position: absolute;
   z-index: 700;
   top: 50%;
-  margin-top: -2.5em;
   border:0;
   background: rgba(255,255,255,.6);
   line-height: 1;
-  padding: 2em .5em;
+  padding: .5em;
   transition: padding .4s ease-out;
 }
 
 .carousel--btn-next:hover, .carousel--btn-next:focus,
 .carousel--btn-prev:hover, .carousel--btn-prev:focus {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.carousel--btn-prev::before {
+	content: '\25c4';
+	display: inline-block;
 }
 
 .carousel--btn-prev {
   left:0;
   border-radius: 0 .25em .25em 0;
+}
+
+.carousel--btn-next::after {
+	content: '\25ba';
+	display: inline-block;
 }
 
 .carousel--btn-next {
@@ -53,4 +62,22 @@
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+}
+
+.carousel li:first-child h1 {
+    width: 100%;
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+
+.carousel li:nth-child(2) h1 {
+    width: 48%;
+    text-align: right;
+    margin: 0 2% 0 50%;
+    mix-blend-mode: multiply;
+}
+
+.carousel li:nth-child(3) h1, 
+.carousel li:nth-child(4) h1 {
+	margin-left: 2%;
 }

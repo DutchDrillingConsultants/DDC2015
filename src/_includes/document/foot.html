@@ -20,16 +20,21 @@ u();setTimeout(a,50)}}var D=Date.now();w(l,"sans-serif",k);w(m,"serif",k);w(n,"m
 
 window.ddc = window.ddc || new Object('ddc');
 
-ddc.observer = new FontFaceObserver('oswaldregular',{weight:400});
-ddc.observer
-	.check(null, 5000)
-	.then(function(){
+ddc.oswald = new FontFaceObserver('oswaldregular', {weight:400});
+ddc.icomoon = new FontFaceObserver('icomoon');
+
+Promise.all([
+	ddc.oswald.check(null, 3000),	
+	ddc.icomoon.check('\uf240')
+	]).then(function(){
 			if (!document.documentElement.classList.contains('font-loaded')) {
 				document.documentElement.className += 'font-loaded';
 			}
 			else {
 				console.log("Font is not available");
 			}
-		});
+	});
+
+	
 </script>
 <script src="../static/javascripts/main.debug.js"></script>
