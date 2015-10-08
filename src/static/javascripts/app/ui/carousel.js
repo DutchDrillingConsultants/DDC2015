@@ -8,7 +8,8 @@ ddc.component.Carousel = function(element){
 	this.index = 0;
 	this.announceSlide = true;
 	this.addControls(element);
-	this.setSlides(this.index);
+	this.addIndicators(element);
+	this.setSlides(this.index);	
 };
 
 ddc.component.Carousel.prototype.addControls = function(element) {
@@ -78,7 +79,7 @@ ddc.component.Carousel.prototype.setSlides = function (new_current, setFocus) {
 
     for (var i = this.slides.length - 1; i >= 0; i--) {
       this.slides[i].classList.add('carousel--slide-list--slide');
-    };
+    }
 
     this.slides[new_next].className = 'next carousel--slide-list--slide';
     this.slides[new_prev].className = 'prev carousel--slide-list--slide';
@@ -86,8 +87,15 @@ ddc.component.Carousel.prototype.setSlides = function (new_current, setFocus) {
 
     if (this.announceSlide) {
       this.slides[new_current].setAttribute('aria-live', 'polite');
-      announceSlide = false;
+      that.announceSlide = false;
     }
+
+    var buttons = document.querySelectorAll('.carousel--slidenav button');
+      for (var i = buttons.length - 1; i >= 0; i--) {
+        buttons[i].className = "";
+      };
+    buttons[new_current].className = "current";
+    
 
     if (setFocus) {
       this.slides[new_current].setAttribute('tabindex', '-1');
@@ -95,4 +103,32 @@ ddc.component.Carousel.prototype.setSlides = function (new_current, setFocus) {
     }
 
     this.index = new_current;
+  };
+
+ddc.component.Carousel.prototype.addIndicators = function(element) {
+		var indicators = document.createElement('UL');		
+		indicators.setAttribute('class', 'carousel--slidenav');
+
+		that.forEach(this.slides, function(i, el){
+			var li = document.createElement('li'),
+					klass = (i === 0) ? 'class="current"' : '',
+					kurrent = (i === 0) ? ' <span class="visuallyhidden">(Current Slide)</span>' : '';
+
+					li.innerHTML = '<button '+ klass +'data-slide="' + i + '"><span class="visuallyhidden">News</span> ' + (i+1) + kurrent + '</button>';
+        	indicators.appendChild(li);
+		})
+
+    indicators.addEventListener('click', function(event) {
+        if (event.target.localName ==	 'button') {
+          that.setSlides(event.target.getAttribute('data-slide'), true);
+        }
+      }, true);
+
+		element.appendChild(indicators);
+};
+
+ddc.component.Carousel.prototype.forEach = function(array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]); // passes back stuff we need
   }
+};

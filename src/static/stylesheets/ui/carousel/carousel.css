@@ -81,3 +81,49 @@
 .carousel li:nth-child(4) h1 {
 	margin-left: 2%;
 }
+
+.carousel--slidenav button {
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
+  line-height: 1em;
+  height: 2em;
+  width: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.carousel--slidenav {
+  position: relative;
+  text-align: center;
+}
+
+.carousel--slidenav li {
+  display:inline-block;
+  margin: 0 .5em;
+}
+
+.carousel--slidenav button {
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
+  line-height: 1em;
+  height: 2em;
+  width:2em;
+  font-weight: bold;
+  color: var(--secondairy-color);
+}
+
+.carousel--slidenav button.current {
+  border-radius: .5em;
+  background-color: var(--secondairy-color);
+  color: var(--main-color);
+}
+
+.carousel--slidenav button:hover,
+.carousel--slidenav button:focus {
+  border: 2px dashed var(--secondairy-color);
+}
+
+.carousel--slidenav button.current:hover,
+.carousel--slidenav button.current:focus {
+  border: 2px dashed var(--secondairy-color);
+}
