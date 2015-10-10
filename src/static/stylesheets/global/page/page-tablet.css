@@ -19,3 +19,7 @@
 .main-list > li:not(:first-child) {
 	border-top: none;
 }
+
+.grid:nth-of-type(3) {
+	padding: 2em 0;
+}

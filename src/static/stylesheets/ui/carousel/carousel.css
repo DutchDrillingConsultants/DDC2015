@@ -9,22 +9,39 @@
 	list-style: none;
 }
 
-.active .carousel--slide-list--slide {
-  display: none;
+.active .carousel--slide-list--slide {	
+	display: none;
+	opacity: 1; 
   position: relative;
   z-index: 500;
   border: none;
+  overflow: hidden;
+}
+
+.carousel--slide-list--slide.next {
+	display: none;
+}
+
+.carousel--slide-list--slide.previous {
+	display: none;
 }
 
 .carousel--slide-list--slide.current {
-  display: block;
+	display: block;
+  animation: fadeIn 5s forwards 7s;
 }
+
+@keyframes fadeIn {
+    0% {opacity: 1;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+	}
 
 .carousel--btn-prev,
 .carousel--btn-next {
   position: absolute;
   z-index: 700;
-  top: 50%;
+  top: 35%;
   border:0;
   background: rgba(255,255,255,.6);
   line-height: 1;
@@ -95,6 +112,8 @@
 .carousel--slidenav {
   position: relative;
   text-align: center;
+  margin: 0 0 2em 0;
+  padding: 0;
 }
 
 .carousel--slidenav li {

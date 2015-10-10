@@ -10,6 +10,7 @@ ddc.component.Carousel = function(element){
 	this.addControls(element);
 	this.addIndicators(element);
 	this.setSlides(this.index);	
+	this.animate();
 };
 
 ddc.component.Carousel.prototype.addControls = function(element) {
@@ -39,9 +40,9 @@ ddc.component.Carousel.prototype.addControls = function(element) {
 	element.appendChild(ctrls);
 };
 
-ddc.component.Carousel.prototype.prevSlide = function(){
+ddc.component.Carousel.prototype.prevSlide = function() {
 	var length = this.slides.length,
-    	new_current = this.index - 1;
+    	new_current = that.index - 1;
 
     if(new_current < 0) {
       new_current = length-1;
@@ -52,7 +53,7 @@ ddc.component.Carousel.prototype.prevSlide = function(){
 
 ddc.component.Carousel.prototype.nextSlide = function(){
     var length = this.slides.length,
-  			new_current = this.index + 1;
+  			new_current = that.index + 1;
 
     if(new_current === length) {
       new_current = 0;
@@ -61,9 +62,9 @@ ddc.component.Carousel.prototype.nextSlide = function(){
     this.setSlides(new_current);
 };
 
-ddc.component.Carousel.prototype.setSlides = function (new_current, setFocus) {
+ddc.component.Carousel.prototype.setSlides = function (new_current, setFocus, args) {
     setFocus = typeof setFocusHere !== 'undefined' ? setFocusHere : false;
-    this.slides[this.index].removeAttribute('aria-live');
+    that.slides[this.index].removeAttribute('aria-live');
 
     new_current = parseFloat(new_current);
 
@@ -81,10 +82,11 @@ ddc.component.Carousel.prototype.setSlides = function (new_current, setFocus) {
       this.slides[i].classList.add('carousel--slide-list--slide');
     }
 
-    this.slides[new_next].className = 'next carousel--slide-list--slide';
-    this.slides[new_prev].className = 'prev carousel--slide-list--slide';
-    this.slides[new_current].className = 'current carousel--slide-list--slide';
-
+    that.slides[new_next].className = 'next carousel--slide-list--slide';
+    that.slides[new_prev].className = 'prev carousel--slide-list--slide';
+    
+ 		that.slides[new_current].className = 'current carousel--slide-list--slide';
+		
     if (this.announceSlide) {
       this.slides[new_current].setAttribute('aria-live', 'polite');
       that.announceSlide = false;
@@ -94,7 +96,7 @@ ddc.component.Carousel.prototype.setSlides = function (new_current, setFocus) {
       for (var i = buttons.length - 1; i >= 0; i--) {
         buttons[i].className = "";
       };
-    buttons[new_current].className = "current";
+    	buttons[new_current].className = "current";
     
 
     if (setFocus) {
@@ -120,6 +122,9 @@ ddc.component.Carousel.prototype.addIndicators = function(element) {
 
     indicators.addEventListener('click', function(event) {
         if (event.target.localName ==	 'button') {
+
+        	var el = document.querySelector('.current');
+        	el.className = "carousel--slide-list--slide";
           that.setSlides(event.target.getAttribute('data-slide'), true);
         }
       }, true);
@@ -131,4 +136,10 @@ ddc.component.Carousel.prototype.forEach = function(array, callback, scope) {
   for (var i = 0; i < array.length; i++) {
     callback.call(scope, i, array[i]); // passes back stuff we need
   }
+};
+
+ddc.component.Carousel.prototype.animate = function() {
+	window.setInterval(function() {
+		that.nextSlide();
+	}, 8000);
 };

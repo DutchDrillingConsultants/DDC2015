@@ -12,3 +12,7 @@
 .carousel h1 {
 	font-size: 1.7em;
 }
+
+.carousel--slidenav {
+	margin-top: .5em;
+}

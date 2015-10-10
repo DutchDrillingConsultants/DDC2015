@@ -12,9 +12,14 @@ ddc.component.Navigation = function(element){
 			(function (index) {
 
 					navEls[index].addEventListener('keydown', function(e) {
-						var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+						var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode,
+								el;
   					if (keyCode === 13) {
 					/* trigger the actual behavior we bound to the 'click' event */
+								el = document.querySelector('.show-sub');
+									if (el) {
+										el.classList.remove('show-sub');
+								}
 								e.target.click();
   					}
   				});

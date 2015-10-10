@@ -1,0 +1,18 @@
+.organization {
+	border-bottom: 1px solid var(--background-sup-sup);
+}
+
+.organization-list > li {
+	text-align: center;
+	padding: 0 1em 0 0;
+	width: calc(31%);
+	border: 0;
+}
+
+.organization-list > li:hover {
+	transform: translateY(-2px);
+}
+
+.organization-list > li:last-child {
+	padding-right: 0;
+}
