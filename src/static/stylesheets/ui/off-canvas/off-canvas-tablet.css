@@ -30,3 +30,7 @@
 .toggle-nav {
 	display: none;
 }
+
+.main {
+	margin-top: 0;
+}

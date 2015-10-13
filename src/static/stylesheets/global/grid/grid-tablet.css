@@ -18,7 +18,3 @@
 .col-1-3 {
   width: 33.33%;
 }
-
-[class*='col-']:last-of-type {
-  padding-left: 2em;
-}

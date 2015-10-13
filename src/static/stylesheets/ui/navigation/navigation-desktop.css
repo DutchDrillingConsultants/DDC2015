@@ -1,3 +1,7 @@
 .header {
 	width: var(--layout-width_desktop);
 }
+
+.site-logo {
+	width: 34%;
+}

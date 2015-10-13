@@ -1,5 +1,6 @@
 .organization {
 	border-bottom: 1px solid var(--background-sup-sup);
+	border-top: 1px solid var(--background-sup-sup);
 }
 
 .organization-list > li {

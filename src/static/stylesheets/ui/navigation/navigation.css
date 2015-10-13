@@ -41,3 +41,21 @@
   font-family: "oswaldregular";
   color: var(--main-color);
 }
+
+.main-navigation a {
+	text-decoration: none;
+}
+
+.main-navigation > ul > li > ul > li {
+	padding-left: 0em;
+	position: relative;
+}
+
+.main-navigation > ul > li > ul > li > a::before {
+	content: '\25B6';
+	display: inline-block;
+	font-size: .7em;
+	position: absolute;
+	top: .2em;
+	left: -1em;
+}
