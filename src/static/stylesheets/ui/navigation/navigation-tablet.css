@@ -17,7 +17,7 @@
 	position: relative;
 	top: 0;
 	left: 0;
-	padding: 1.5em;
+	padding: 1.5em 1.5em 1em 1.5em;
 	z-index: 99;
 }
 
@@ -37,7 +37,9 @@
 
 .main-navigation {
 	display: table-cell;
-	vertical-align: bottom;
+	vertical-align: top;
+	padding-top: 12px;
+	border-bottom: 1px solid var(--background-sup-sup);
 }
 
 .main-navigation > ul > li {

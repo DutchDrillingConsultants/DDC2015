@@ -22,3 +22,11 @@
 	position: absolute;
 	width: 1px;
 }
+
+.special-background {
+	background-color: var(--background-sup);
+}
+
+.border-top {
+	border-top: 1px solid var(--background-sup-sup);
+}

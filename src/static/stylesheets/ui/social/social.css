@@ -1,0 +1,18 @@
+.social-list {
+	margin: 0;
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.social-list--item {
+	display: flex;
+	flex-direction: row;
+	padding: 1.5em 1em 1em 1em;
+}
+
+.social-list--item a {
+	text-decoration: none;
+}

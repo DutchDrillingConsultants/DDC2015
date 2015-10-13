@@ -15,15 +15,104 @@
 			</header>		
 		</div>
 		<main role="main" class="main home">
-			<section class="grid">	
+			<section class="grid special-background">	
 				<div class="container">
 					<h1>Projects</h1>
 					<P>DDC has done many different projects...
-					</P>
+					</P>					
+				</div>				
+			</section>
+			<section class="grid">
+				<div class="container">
+					<ul class="project-overview">
+						<li class="project-overview--list-item">
+							<div class="project-overview--list-item--card main-section">
+							<a href="#" title="project-link">
+								<img src="../static/images/project-details1.jpg" alt="deep drill"/>
+								<div class="project-overview--list-item--card__content">
+								<h2>DDC drills deep</h2>								
+								<p>We drill all the way. Very deep woohaa!
+								</p>
+								<span class="project-overview--list-item--card__tag">Renewables</span>
+								</div>
+								</a>
+							</div>
+						</li>
+						<li class="project-overview--list-item">
+							<div class="project-overview--list-item--card main-section">
+							<a href="#" title="project-link">
+								<img src="../static/images/project-details2.jpg" alt="deep drill"/>
+								<div class="project-overview--list-item--card__content">
+								<h2>DDC drills deep</h2>								
+								<p>We drill all the way. Very deep woohaa!
+								</p>
+								<span class="project-overview--list-item--card__tag">Renewables</span>
+								</div>								
+								</a>
+							</div>
+						</li>
+						<li class="project-overview--list-item">
+							<div class="project-overview--list-item--card main-section">
+							<a href="#" title="project-link">
+								<img src="../static/images/project-details2.jpg" alt="deep drill"/>
+								<div class="project-overview--list-item--card__content">
+								<h2>DDC drills deep</h2>								
+								<p>We drill all the way. Very deep woohaa!
+								</p>
+								<span class="project-overview--list-item--card__tag">Renewables</span>
+								</div>
+								</a>
+							</div>
+						</li>
+						<li class="project-overview--list-item">
+							<div class="project-overview--list-item--card main-section">
+							<a href="#" title="project-link">
+								<img src="../static/images/project-details4.jpg" alt="deep drill"/>
+								<div class="project-overview--list-item--card__content">
+								<h2>DDC drills deep</h2>
+								
+								<p>We drill all the way. Very deep woohaa!
+								</p>
+								<span class="project-overview--list-item--card__tag">Nearshore</span>
+								</div>
+								</a>
+							</div>
+						</li>
+						<li class="project-overview--list-item">
+							<div class="project-overview--list-item--card main-section">
+							<a href="#" title="project-link">
+								<img src="../static/images/project-details1.jpg" alt="deep drill"/>
+								<div class="project-overview--list-item--card__content">
+								<h2>DDC drills deep</h2>
+								
+								<p>We drill all the way. Very deep woohaa!
+								</p>
+								<span class="project-overview--list-item--card__tag">Offshore</span>
+								</div>
+								</a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</main>
 	</div>
+	<!--#include virtual="../_includes/document/social.html" -->
 </div>
+
+<!--#include virtual="../_includes/document/foot.html" -->
+<script>
+function log() {
+var t = window.performance.timing,
+	interactive = t.domInteractive - t.domLoading,
+	dcl = t.domContentLoadedEventStart - t.domLoading,
+	complete = t.domComplete - t.domLoading;
+	var stats = document.createElement('p');
+	stats.textContent = 'interactive : ' + interactive + 'ms, ' +
+	'dcl: ' + dcl + 'ms, complete: ' + complete + 'ms';
+	document.body.appendChild(stats);
+	}
+
+</script>
 </body>
 </html>
