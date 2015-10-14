@@ -104,7 +104,7 @@
     content: "\eacf";
 }
 
-.font-loaded body {
+.font-loaded h1 {
     font-family: 'oswaldregular';
 }
 
@@ -120,6 +120,16 @@ h3 {
 
 p, li, .toggle-nav {
     font-family: sans-serif;
+}
+
+.font-loaded figcaption,
+.font-loaded blockquote {
+    font-family: 'oswaldregular';
+} 
+
+blockquote {
+    font-size: 1.1em;
+    letter-spacing: 0px;
 }
 
 .btn {

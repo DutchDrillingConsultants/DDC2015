@@ -1,0 +1,11 @@
+blockquote {
+	margin: 1.5em 0em .75em 0;		
+}
+
+figure {
+	margin: 0;
+}
+
+article .container p {
+	padding: 0;
+}

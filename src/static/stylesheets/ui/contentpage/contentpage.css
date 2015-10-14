@@ -1,0 +1,38 @@
+blockquote {
+	margin: 1.5em 1em .75em 2em;	
+  padding: .75em .5em 1em 1em;
+	background: var(--secondairy-color);
+	border-left: 0.5em solid var(--background-sup-sup);
+  box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+blockquote::before {
+	display: block;
+	height: 0;
+	content: "“";
+	margin-left: -.95em;
+	font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+	color: var(--main-color);
+}
+
+article figure {
+	max-width: var(--max-img-width);
+	float: left;
+	padding-right: 1.5em;
+}
+
+article figure img {
+	border-bottom-left-radius: 10px;
+}
+
+figure {
+	margin: auto 0em auto 1.5em;
+}
+
+article .container p {
+	padding: 0 1em;
+}
+
+h1 + p {
+	padding: 0 !important;
+}
