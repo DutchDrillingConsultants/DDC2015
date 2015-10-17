@@ -1,0 +1,13 @@
+span[itemprop="streetAddress"],
+span[itemprop="postalCode"],
+span[itemprop="addressLocality"] {
+	display: block;
+}
+
+.contact {
+	padding: 0 1em;
+}
+
+.contact h2 {
+	margin-bottom: .1em;
+}

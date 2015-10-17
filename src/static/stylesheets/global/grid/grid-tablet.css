@@ -1,3 +1,7 @@
+.grid {
+	margin: 1em 0;
+}
+
 [class*='col-'] {
   float: left;
 }

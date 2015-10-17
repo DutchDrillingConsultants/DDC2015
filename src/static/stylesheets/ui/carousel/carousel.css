@@ -84,14 +84,12 @@
 .carousel li:first-child h1 {
     width: 100%;
     text-align: center;
-    mix-blend-mode: multiply;
 }
 
 .carousel li:nth-child(2) h1 {
     width: 48%;
     text-align: right;
     margin: 0 2% 0 50%;
-    mix-blend-mode: multiply;
 }
 
 .carousel li:nth-child(3) h1, 

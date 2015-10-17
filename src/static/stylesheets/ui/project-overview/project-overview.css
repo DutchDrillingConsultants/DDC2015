@@ -14,6 +14,10 @@
 	border-top: 1px solid var(--background-sup-sup);
 }
 
+.project-overview--list-item img {
+	border-bottom-left-radius: 1em;
+}
+
 .project-overview--list-item a {
 	text-decoration: none;
 }

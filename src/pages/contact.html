@@ -1,0 +1,83 @@
+<!doctype html>
+<html itemtype itemscope="http://schema.org/WebPage">
+<head>
+    <title>Home | DDC2015</title>
+    <!--#include virtual="../_includes/document/head.html" -->
+</head>
+<body onload="log()">
+<div class="site-wrapper" data-constructor="OffCanvas"> 
+	<div class="canvas-wrapper"> 
+		<a href="#" class="toggle-nav">Show menu</a>
+		<div class="site-menu">			
+			<header class="header" role="banner">	
+				<!--#include virtual="../_includes/document/logo.html" -->			
+				<!--#include virtual="../_includes/navigation/nav.html" -->
+			</header>		
+		</div>
+		<main role="main" class="main home">
+		<article>
+			<div class="grid special-background">	
+				<div class="container">
+					<h1>Dutch drilling consultants</h1>
+					<P>Contact information
+					</P>					
+				</div>				
+			</div>
+			<div class="container">
+				<div class="grid contact">
+					<div class="" itemscope itemtype="http://schema.org/LocalBusiness">
+						<h2><span itemprop="name">Dutch drilling consultants Office</span></h2>
+						<div itemscope itemtype="http://schema.org/PostalAddress">
+							<span itemprop="streetAddress">
+			   				Coenecoop 3 B4
+			    		</span>   
+			    		<span itemprop="postalCode">2741 PG</span>
+		    		 	<span itemprop="addressLocality">Waddinxveen</span>
+							<span>tel: </span><a itemprop="telephone" href="tel:+31(0)182-634625">+31(0)182-634625</a>
+						</div>
+					</div>
+					<div class="" itemscope itemtype="http://schema.org/LocalBusiness">
+						<h2><span itemprop="name">Dutch drilling consultants Correspondence</span></h2>
+						<div itemscope itemtype="http://schema.org/PostalAddress">
+							<span>
+			   				PO Box 12
+			    		</span>   
+			    		<span itemprop="postalCode">2740 AA</span>
+		    		 	<span itemprop="addressLocality">Waddinxveen</span>
+							<span>email: </span><a itemprop="email" href="mailto:info@ddcbv.com">info@ddcbv.com</a>
+						</div>
+					</div>
+					<div class="" itemscope itemtype="http://schema.org/LocalBusiness">
+					<h2><span itemprop="name">Yard</span></h2>
+						<div itemscope itemtype="http://schema.org/PostalAddress">
+							<span itemprop="streetAddress">
+			   				Ringdijk 486
+			    		</span>   
+			    		<span itemprop="postalCode">2983 GS</span>
+		    		 	<span itemprop="addressLocality">Ridderkerk</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</main>
+	</div>
+	<!--#include virtual="../_includes/document/social.html" -->
+</div>
+
+<!--#include virtual="../_includes/document/foot.html" -->
+<script>
+function log() {
+var t = window.performance.timing,
+	interactive = t.domInteractive - t.domLoading,
+	dcl = t.domContentLoadedEventStart - t.domLoading,
+	complete = t.domComplete - t.domLoading;
+	var stats = document.createElement('p');
+	stats.textContent = 'interactive : ' + interactive + 'ms, ' +
+	'dcl: ' + dcl + 'ms, complete: ' + complete + 'ms';
+	document.body.appendChild(stats);
+	}
+
+</script>
+</body>
+</html>
