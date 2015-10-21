@@ -20,6 +20,7 @@
   transform: translateZ(0) translateX(0); 
 	padding: 1.5em;
 	background: var(--secondairy-color);
+	border-bottom: 1px solid var(--background-sup-sup);
 }
 
 .site-wrapper.show-nav .canvas-wrapper {
@@ -27,7 +28,8 @@
   transform: none;  
 }
 
-.toggle-nav {
+.site-wrapper .toggle-nav,
+.toggle-nav + div {
 	display: none;
 }
 

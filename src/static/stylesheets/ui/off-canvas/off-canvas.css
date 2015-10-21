@@ -31,12 +31,12 @@
 	top: 0;
 	-webkit-transform: translateZ(0) translateX(-90vw);  
   transform: translateZ(0) translateX(-90vw); 
-	background: var(--background-sup-sup);
+	background: var(--background-sup);
 }
 
 .main {
 	height: 100%;
-	margin-top: 3em;
+	margin-top: 2em;
 }
 
 .site-wrapper .canvas-wrapper::after {
@@ -59,6 +59,8 @@
 .site-wrapper .toggle-nav {
 	position: relative;
 	z-index: 99;
+	display: inline-block;
+  vertical-align: top;
 }
 
 .site-wrapper .toggle-nav::before {

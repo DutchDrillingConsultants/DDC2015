@@ -1,3 +1,7 @@
+.main-navigation > ul {
+	margin-top: 0;
+}
+
 .site-wrapper {
 	height: auto;
 }
@@ -30,6 +34,10 @@
 	display: none;
 }
 
+.header .site-logo {
+	display: table-cell;
+}
+
 .header {
 	width: var(--layout-width_tablet);
 	margin: 0 auto;
@@ -39,7 +47,6 @@
 	display: table-cell;
 	vertical-align: top;
 	padding-top: 12px;
-	border-bottom: 1px solid var(--background-sup-sup);
 }
 
 .main-navigation > ul > li {

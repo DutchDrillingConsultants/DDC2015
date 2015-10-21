@@ -1,6 +1,6 @@
 blockquote {
-	margin: 1.5em 1em .75em 2em;	
-  padding: .75em .5em 1em 1em;
+	margin: 2em 1em 1em 2em;	
+  padding: 1em .5em 1em 1em;
 	background: var(--secondairy-color);
 	border-left: 0.5em solid var(--background-sup-sup);
   box-shadow: 0 0 6px rgba(0,0,0,0.5);
@@ -35,4 +35,19 @@ article .container p {
 
 h1 + p {
 	padding: 0 !important;
+}
+
+dl.main-section {
+	padding: 0;
+}
+
+dt {
+	margin-top: .5em;
+	font-weight: bold;
+}
+
+dd {
+	-ms-margin-start: 0;
+	-moz-margin-start: 0;
+	-webkit-margin-start: 0;
 }

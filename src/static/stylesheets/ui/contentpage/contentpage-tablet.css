@@ -9,3 +9,18 @@ figure {
 article .container p {
 	padding: 0;
 }
+
+dl.main-section {
+	padding: 1em 1.5em;
+	box-shadow: none
+}
+
+dt {
+	width: 40%;
+	display: inline-block;
+}
+
+dd {
+	width: 58%;
+	display: inline-block;
+}

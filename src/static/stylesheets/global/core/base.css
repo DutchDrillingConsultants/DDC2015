@@ -26,6 +26,15 @@ a {
 	color: var(--main-color);
 }
 
+a[href$=".pdf"]::before {
+	content: '';
+	width: 16px;
+	height: 16px;
+	margin-right: .1em;
+	display: inline-block;
+	background-image: url('data:image/gif;base64,R0lGODlhEAAQALMAAPv3+//u8P3i5P/d4fvV2dbW1vrExvWfouRxc3t7ef9RUfJEOt9GSP///wAAAAAAACH5BAUUAA0ALAAAAAAQABAAAARbcMlJJWh4ga05T1ijjQApJWjSlWy3JJtaWt4ZV/gbN2nv77ANQMAQGkHBDYEhMAKNjKgTgBQGigcGYfvcRA1ZxoKBoPI2BgVhsAkYEMVq1jAFFMwJIrsO9PlTEQA7');
+}
+
 img {
 	max-width: 100%;
 	width: 100%;
