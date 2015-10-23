@@ -8,6 +8,7 @@
 <div class="site-wrapper" data-constructor="OffCanvas"> 
 	<div class="canvas-wrapper"> 
 		<a href="#" class="toggle-nav">Show menu</a>
+		<!--#include virtual="../_includes/document/logo.html" -->
 		<div class="site-menu">			
 			<header class="header" role="banner">	
 				<!--#include virtual="../_includes/document/logo.html" -->			
@@ -31,7 +32,9 @@
 			    		</span>   
 			    		<span itemprop="postalCode">2741 PG</span>
 		    		 	<span itemprop="addressLocality">Waddinxveen</span>
-							<span>tel: </span><a itemprop="telephone" href="tel:+31(0)182-634625">+31(0)182-634625</a>
+							<span>tel: </span><a itemprop="telephone" href="tel:+31(0)182-634625">+31(0)182-634625</a>					
+						</div>
+						<div id="mapPostalAddress" data-constructor="GoogleMap" data-lat="52.031373" data-lon="4.650482" data-title="DDC Headquarter">
 						</div>
 					</div>
 					<div class="" itemscope itemtype="http://schema.org/LocalBusiness">
@@ -55,6 +58,8 @@
 		    		 	<span itemprop="addressLocality">Ridderkerk</span>
 		    		 	<span>Quayside km 990</span>
 						</div>
+							<div id="mapYardAddress" data-constructor="GoogleMap" data-lat="51.889647" data-lon="4.602093" data-title="DDC Yard Address">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -63,7 +68,7 @@
 	</div>
 	<!--#include virtual="../_includes/document/social.html" -->
 </div>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3yKE7A69r8BZR30_5bXdK73iRSJKm6I4&callback=ddc.component.GoogleMap" type="text/javascript" async defer></script>
 <!--#include virtual="../_includes/document/foot.html" -->
 <script>
 function log() {

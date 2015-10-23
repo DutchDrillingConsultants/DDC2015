@@ -58,6 +58,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-lifebuoy:before {
+    content: "\e941";
+}
 .icon-phone:before {
     content: "\e942";
 }
@@ -70,8 +73,11 @@
 .icon-cogs:before {
     content: "\e995";
 }
-.icon-infinite:before {
-    content: "\ea2f";
+.icon-link:before {
+    content: "\e9cb";
+}
+.icon-loop2:before {
+    content: "\ea2e";
 }
 .icon-circle-right:before {
     content: "\ea42";
@@ -79,14 +85,8 @@
 .icon-circle-left:before {
     content: "\ea44";
 }
-.icon-share2:before {
-    content: "\ea82";
-}
 .icon-mail4:before {
     content: "\ea86";
-}
-.icon-google-plus3:before {
-    content: "\ea8a";
 }
 .icon-facebook3:before {
     content: "\ea8e";
@@ -99,9 +99,6 @@
 }
 .icon-linkedin:before {
     content: "\eac8";
-}
-.icon-stackoverflow:before {
-    content: "\eacf";
 }
 
 .font-loaded h1 {

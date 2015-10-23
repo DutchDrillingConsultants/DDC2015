@@ -46,7 +46,7 @@
 .main-navigation {
 	display: table-cell;
 	vertical-align: top;
-	padding-top: 12px;
+	padding-top: .6%;
 }
 
 .main-navigation > ul > li {
@@ -90,8 +90,11 @@
 
 .site-logo {
   display: table-cell;
-  width: 27%;
-  min-width: 100px;
+  max-width: 100px;
+}
+
+.site-logo a {
+	width: 60%;
 }
 
 .site-logo img {
@@ -108,4 +111,8 @@
 .main-navigation > ul > li > ul > li > a::before {
 	top: .3em;
 	left: .2em;
+}
+
+article ul {
+	padding-left: 1.3em;
 }

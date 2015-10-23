@@ -1,5 +1,5 @@
 :root {
-	--main-color: rgb(47,70,150);
+	--main-color: rgb(14, 41, 75); /* 47,70,150 */
 	--secondairy-color: rgb(255,255,255);
 	--tertiary-color: rgb(255,133,27);
 	--border-color: rgb(224, 224, 224);
@@ -7,6 +7,6 @@
 	--background-sup-sup: rgb(230, 232, 242); /*230, 232, 242 80, 99, 166*/
 
 	--layout-width_desktop: 56em;
-	--layout-width_tablet: 36em;
+	--layout-width_tablet: 90%;
 	--max-img-width: 12em;
 }

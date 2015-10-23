@@ -11,3 +11,9 @@ span[itemprop="addressLocality"] {
 .contact h2 {
 	margin-bottom: .1em;
 }
+
+#mapPostalAddress,
+#mapYardAddress {
+	margin: 1em 0;
+	padding-bottom: 50%;
+}

@@ -33,23 +33,14 @@
 }
 
 .site-logo img {
-	width: auto;
+	width: 100%;
 	display: inline-block;
 	float: left;
 }
 
 .site-logo a {
 	display: inline-block;
-	width: auto;
-}
-
-.site-logo span {
-  display: inline-block;
-  margin-top: 10%;
-  margin-left: 10px;
-  font-size: 1.6em;
-  font-family: "oswaldregular";
-  color: var(--main-color);
+	width: 20%;
 }
 
 .main-navigation a {
