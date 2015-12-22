@@ -5,33 +5,41 @@
     <!--#include virtual="../_includes/document/head.html" -->
 </head>
 <body onload="log()">
-<div class="site-wrapper" data-constructor="OffCanvas"> 
-	<div class="canvas-wrapper"> 
+<div class="site-wrapper" data-constructor="OffCanvas">
+	<div class="canvas-wrapper">
 		<a href="#" class="toggle-nav">Show menu</a>
 		<!--#include virtual="../_includes/document/logo.html" -->
-		<div class="site-menu">			
-			<header class="header" role="banner">	
-				<!--#include virtual="../_includes/document/logo.html" -->			
+		<div class="site-menu">
+			<header class="header" role="banner">
+				<!--#include virtual="../_includes/document/logo.html" -->
 				<!--#include virtual="../_includes/navigation/nav.html" -->
-			</header>		
+			</header>
 		</div>
 		<main role="main" class="main home">
-			<section class="grid special-background">	
+			<section class="grid special-background">
 				<div class="container">
 					<h1>Projects</h1>
 					<P>DDC has done many different projects...
-					</P>					
-				</div>				
+					</P>
+				</div>
 			</section>
 			<section class="grid">
 				<div class="container">
+					<div class="overview-filter">
+				<label for="filter-result">filter: </label>
+				<select id="filter-result" name="filter-result">
+					<option>nearshore</option>
+					<option>offsore</option>
+					<option>oil</option>
+				</select>
+				</div>
 					<ul class="project-overview">
 						<li class="project-overview--list-item">
 							<div class="project-overview--list-item--card main-section">
 							<a href="#" title="project-link">
 								<img src="../static/images/project-details1.jpg" alt="deep drill"/>
 								<div class="project-overview--list-item--card__content">
-								<h2>DDC drills deep</h2>								
+								<h2>DDC drills deep</h2>
 								<p>We drill all the way. Very deep woohaa!
 								</p>
 								<span class="project-overview--list-item--card__tag">Renewables</span>
@@ -44,11 +52,11 @@
 							<a href="#" title="project-link">
 								<img src="../static/images/project-details2.jpg" alt="deep drill"/>
 								<div class="project-overview--list-item--card__content">
-								<h2>DDC drills deep</h2>								
+								<h2>DDC drills deep</h2>
 								<p>We drill all the way. Very deep woohaa!
 								</p>
 								<span class="project-overview--list-item--card__tag">Renewables</span>
-								</div>								
+								</div>
 								</a>
 							</div>
 						</li>
@@ -57,7 +65,7 @@
 							<a href="#" title="project-link">
 								<img src="../static/images/project-details2.jpg" alt="deep drill"/>
 								<div class="project-overview--list-item--card__content">
-								<h2>DDC drills deep</h2>								
+								<h2>DDC drills deep</h2>
 								<p>We drill all the way. Very deep woohaa!
 								</p>
 								<span class="project-overview--list-item--card__tag">Renewables</span>
@@ -71,7 +79,7 @@
 								<img src="../static/images/project-details4.jpg" alt="deep drill"/>
 								<div class="project-overview--list-item--card__content">
 								<h2>DDC drills deep</h2>
-								
+
 								<p>We drill all the way. Very deep woohaa!
 								</p>
 								<span class="project-overview--list-item--card__tag">Nearshore</span>
@@ -85,7 +93,7 @@
 								<img src="../static/images/project-details1.jpg" alt="deep drill"/>
 								<div class="project-overview--list-item--card__content">
 								<h2>DDC drills deep</h2>
-								
+
 								<p>We drill all the way. Very deep woohaa!
 								</p>
 								<span class="project-overview--list-item--card__tag">Offshore</span>

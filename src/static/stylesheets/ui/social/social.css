@@ -16,9 +16,3 @@
 .social-list--item a {
 	text-decoration: none;
 }
-
-.drillplatform-bg {
-	background: url('../images/footerbgzwartwit.jpg') no-repeat bottom;
-	background-origin: content-box;
-	background-size: 100% auto;
-}

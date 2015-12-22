@@ -12,3 +12,8 @@
 	padding: 1em 1.5em;
 	border-top: 1px solid var(--background-sup-sup);
 }
+
+.organization-list img {
+	max-width: auto;
+	width: auto;
+}

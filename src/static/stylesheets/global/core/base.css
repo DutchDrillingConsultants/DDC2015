@@ -13,7 +13,6 @@ html, body {
 
 body {
 	/* ipad touch fix */
-	cursor: pointer;
 	-webkit-overflow-scrolling: touch
 }
 

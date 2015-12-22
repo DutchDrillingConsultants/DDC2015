@@ -1,7 +1,7 @@
 .project-overview--list-item {
 	width: 50%;
 	flex-grow: 1;
-	padding: 1em;
+	padding: 1em 1em 1em 0;
 	border: none;
 }
 
@@ -15,4 +15,10 @@
 
 .project-overview .main-section {
 	padding-bottom: 1em;
+}
+
+.overview-filter {
+	float: right;
+	margin-right: 20px;
+	margin-top: 0;
 }

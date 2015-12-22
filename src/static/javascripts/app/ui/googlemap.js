@@ -2,10 +2,10 @@
 
 ddc.api.store = {
 	elm : []
-}
+};
 
 ddc.component.GoogleMap = function(element) {
-	var obj = {}
+	var obj = {};
 
 	if (element) {		
 		obj.id = element.getAttribute('id');
@@ -31,4 +31,4 @@ ddc.component.GoogleMap = function(element) {
 		});
 		}
 	}
-}
+};

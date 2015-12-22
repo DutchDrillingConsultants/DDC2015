@@ -1,3 +1,7 @@
 .container {
 	width: var(--layout-width_desktop);
 }
+
+.main-content {
+	padding: 0;
+}
