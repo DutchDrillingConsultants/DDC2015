@@ -1,6 +1,6 @@
 .project-overview--list-item {
 	width: 50%;
-	flex-grow: 1;
+	flex-grow: 0;
 	padding: 1em 1em 1em 0;
 	border: none;
 }

@@ -1,3 +1,7 @@
+footer {
+    clear: both;
+}
+
 .social-list {
 	margin: 0;
 	list-style-type: none;
@@ -9,10 +13,20 @@
 
 .social-list--item {
 	display: flex;
-	flex-direction: row;
-	padding: 1.5em 1em 1em 1em;
+	flex-direction: column;
+    flex-grow: 1;
+	padding: 2em 1em 1em 1em;
 }
 
 .social-list--item a {
 	text-decoration: none;
+}
+
+.company-compliance {
+    font-size: .8rem;
+    text-align: center;
+}
+
+footer .border-top {
+    border-width: 2px;
 }
