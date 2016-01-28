@@ -3,7 +3,7 @@
     src: url('../fonts/icomoon.eot');
     src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
          url('../fonts/icomoon.woff') format('woff'),
-         url('../fonts/icomoon.ttf') format('truetype'),         
+         url('../fonts/icomoon.ttf') format('truetype'),
          url('../fonts/icomoon.svg?#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -122,11 +122,12 @@ p, li, .toggle-nav {
 .font-loaded figcaption,
 .font-loaded blockquote {
     font-family: 'oswaldregular';
-} 
+}
 
 blockquote {
     font-size: 1.1em;
     letter-spacing: 0px;
+    color: var(--tertiary-color);
 }
 
 .btn {
