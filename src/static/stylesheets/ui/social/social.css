@@ -8,14 +8,14 @@ footer {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
+    flex-direction: column;
 	justify-content: flex-start;
+
 }
 
 .social-list--item {
-	display: flex;
-	flex-direction: column;
-    flex-grow: 1;
 	padding: 2em 1em 1em 1em;
+    width: 100%;
 }
 
 .social-list--item a {
@@ -24,7 +24,6 @@ footer {
 
 .company-compliance {
     font-size: .7rem;
-    text-align: center;
 }
 
 footer .border-top {

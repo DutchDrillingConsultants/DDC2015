@@ -25,7 +25,8 @@ blockquote::after {
 	color: var(--main-color);
     position: absolute;
     top: .195em;
-    right: -0.395em;
+    right: -.5em;
+    width: .5em;
 }
 
 article figure {
