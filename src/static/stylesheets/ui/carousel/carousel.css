@@ -9,9 +9,9 @@
 	list-style: none;
 }
 
-.active .carousel--slide-list--slide {	
+.active .carousel--slide-list--slide {
 	display: none;
-	opacity: 1; 
+	opacity: 1;
   position: relative;
   z-index: 500;
   border: none;
@@ -82,17 +82,17 @@
 }
 
 .carousel li:first-child h1 {
-    width: 100%;
-    text-align: center;
+    text-align: left;
+    margin-left: 2%;
 }
 
-.carousel li:nth-child(2) h1 {
+.carousel li:nth-child(2) h1,
+.carousel li:nth-child(3) h1 {
     width: 48%;
     text-align: right;
     margin: 0 2% 0 50%;
 }
 
-.carousel li:nth-child(3) h1, 
 .carousel li:nth-child(4) h1 {
 	margin-left: 2%;
 }

@@ -1,13 +1,3 @@
 .carousel h1 {
 	font-size: 2.2em;
 }
-
-.carousel li:first-child h1 {
-	width: 56%;
-	margin-left: 15%;
-}
-
-.carousel li:first-child h1 span:nth-child(2) {
-	display: inline-block;
-	float: right;
-}
