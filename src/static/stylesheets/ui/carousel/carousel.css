@@ -86,13 +86,13 @@
     margin-left: 2%;
 }
 
-.carousel li:nth-child(2) h1,
 .carousel li:nth-child(3) h1 {
     width: 48%;
     text-align: right;
     margin: 0 2% 0 50%;
 }
 
+.carousel li:nth-child(2) h1,
 .carousel li:nth-child(4) h1 {
 	margin-left: 2%;
 }
