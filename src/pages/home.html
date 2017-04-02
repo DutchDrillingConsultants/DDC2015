@@ -1,97 +1,115 @@
 <!doctype html>
 <html itemtype itemscope="http://schema.org/WebPage">
+
 <head>
-    <title>Home | DDC2015</title>
-    <!--#include virtual="../_includes/document/head.html" -->
+	<title>Home | DDC2015</title>
+	<!--#include virtual="../_includes/document/head.html" -->
 </head>
+
 <body onload="log()">
-<div class="site-wrapper" data-constructor="OffCanvas"> 
-	<div class="canvas-wrapper"> 
-		<a href="#" class="toggle-nav">Show menu</a>
-		<!--#include virtual="../_includes/document/logo.html" -->
-		<div class="site-menu">			
-			<header class="header" role="banner">	
-				<!--#include virtual="../_includes/document/logo.html" -->			
-				<!--#include virtual="../_includes/navigation/nav.html" -->
-			</header>		
-		</div>
-		<main role="main" class="main home">
-			<section class="grid">
+	<div class="site-wrapper" data-constructor="OffCanvas">
+		<div class="canvas-wrapper">
+			<a href="#" class="toggle-nav">Show menu</a>
+			<!--#include virtual="../_includes/document/logo.html" -->
+			<div class="site-menu">
+				<header class="header" role="banner">
+					<!--#include virtual="../_includes/document/logo.html" -->
+					<!--#include virtual="../_includes/navigation/nav.html" -->
+				</header>
+			</div>
+			<main role="main" class="main home">
+				<section class="grid">
 
-				<div class="container"><!--#include virtual="../_includes/carousel/carousel.html" --></div>
-			</section>
-			<section class="grid special-background">
-				<div class="container">				
-						<ul class="main-list">
-						<li class="col-1-2">
-							<div class="main-section">
-								<h3><i class="icon-lifebuoy"></i>Services</h3>
-								<p>For offshore we deliver many different services. Drilling is what we do for our passion...</p>
-								<a href="#" title="read more services">read more</a>
-							</div>
-						</li>
-						<li class="col-1-2">
-							<div class="main-section">
-								<h3><i class="icon-cogs"></i>Products</h3>
-								<p>We make the best products for drilling</p>
-								<a href="#" title="read more products">read more</a>
-							</div>
-						</li>	
-						</ul>					
+					<div class="container">
+						<!--#include virtual="../_includes/carousel/carousel.html" -->
 					</div>
-			</section>
-			<section class="grid">
-				<div class="container">				
+				</section>
+				<section class="grid">
+					<div class="container">
 						<ul class="main-list">
-						<li class="col-1">
-							<div class="main-section">
-								<h3><i class="icon-loop2"></i>Pile top drilling</h3>
-								<p>For offshore we deliver many different services. Drilling is what we do for our passion...</p>
-								<a href="#" title="read more services">read more</a>
-							</div>
-						</li>						
-						</ul>					
-				</div>
-			</section>
-			<section class="grid organization">
-				<div class="container">	
-					<ul class="organization-list">
-						<li itemscope itemtype="http://schema.org/Organization">
-							<a href="https://www.akersolutions.com/" title="aker solutions">
-								<img src="../static/images/akersolutions.jpg" alt="org" itemprop="logo">
-							</a>
-						</li>
-							<li itemscope itemtype="http://schema.org/Organization">
-							<a href="http://www.haeny.com/en/" title="hany grouting">
-								<img src="../static/images/hany.png" alt="org" itemprop="logo">
-							</a>
-						</li>
-						<li itemscope itemtype="http://schema.org/Organization">
-							<a href="http://www.klemm-bohrtechnik.de/startseite/" title="klemm bohrtechnik">
-								<img src="../static/images/klemm-logo.png" alt="org" itemprop="logo">
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</main>
-	</div>
-	<!--#include virtual="../_includes/document/social.html" -->
-</div>
-<!--#include virtual="../_includes/document/foot.html" -->
-<script>
-function log() {
-var t = window.performance.timing,
-	interactive = t.domInteractive - t.domLoading,
-	dcl = t.domContentLoadedEventStart - t.domLoading,
-	complete = t.domComplete - t.domLoading;
-	var stats = document.createElement('p');
-	stats.textContent = 'interactive : ' + interactive + 'ms, ' +
-	'dcl: ' + dcl + 'ms, complete: ' + complete + 'ms';
-	document.body.appendChild(stats);
-	}
+							<li class="col-1">
+								<div class="main-section">
+									<h3><i class="icon-map"></i>Nieuws</h3>
+									<p>For offshore we deliver many different services. Drilling is what we do for our passion...</p>
+									<a href="#" title="read more services">read more</a>
+								</div>
+							</li>
+						</ul>
+					</div>
 
-</script>
+				</section>
+				<section class="grid special-background">
+					<div class="container">
+						<ul class="main-list">
+							<li class="col-1-2">
+								<div class="main-section">
+									<h3><i class="icon-lifebuoy"></i>Services</h3>
+									<p>For offshore we deliver many different services. Drilling is what we do for our passion...</p>
+									<a href="#" title="read more services">read more</a>
+								</div>
+							</li>
+							<li class="col-1-2">
+								<div class="main-section">
+									<h3><i class="icon-cogs"></i>Products</h3>
+									<p>We make the best products for drilling</p>
+									<a href="#" title="read more products">read more</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="grid">
+					<div class="container">
+						<ul class="main-list">
+							<li class="col-1">
+								<div class="main-section">
+									<h3><i class="icon-loop2"></i>Pile top drilling</h3>
+									<p>For offshore we deliver many different services. Drilling is what we do for our passion...</p>
+									<a href="#" title="read more services">read more</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="grid organization">
+					<div class="container">
+						<ul class="organization-list">
+							<li itemscope itemtype="http://schema.org/Organization">
+								<a href="https://www.akersolutions.com/" title="aker solutions">
+									<img src="../static/images/akersolutions.jpg" alt="org" itemprop="logo">
+								</a>
+							</li>
+							<li itemscope itemtype="http://schema.org/Organization">
+								<a href="http://www.haeny.com/en/" title="hany grouting">
+									<img src="../static/images/hany.png" alt="org" itemprop="logo">
+								</a>
+							</li>
+							<li itemscope itemtype="http://schema.org/Organization">
+								<a href="http://www.klemm-bohrtechnik.de/startseite/" title="klemm bohrtechnik">
+									<img src="../static/images/klemm-logo.png" alt="org" itemprop="logo">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+		</div>
+		<!--#include virtual="../_includes/document/social.html" -->
+	</div>
+	<!--#include virtual="../_includes/document/foot.html" -->
+	<script>
+		function log() {
+			var t = window.performance.timing,
+				interactive = t.domInteractive - t.domLoading,
+				dcl = t.domContentLoadedEventStart - t.domLoading,
+				complete = t.domComplete - t.domLoading;
+			var stats = document.createElement('p');
+			stats.textContent = 'interactive : ' + interactive + 'ms, ' +
+				'dcl: ' + dcl + 'ms, complete: ' + complete + 'ms';
+			document.body.appendChild(stats);
+		}
+	</script>
 
 </body>
+
 </html>

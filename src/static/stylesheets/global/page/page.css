@@ -16,9 +16,9 @@
 	margin: 0;
 }
 
-.grid:nth-of-type(2) {
+/*.grid:nth-of-type(2) {
 	margin-bottom: 2em;
-}
+}*/
 
 .grid.special-background {
 	padding: .5em 1em;
